@@ -1,0 +1,44 @@
+.business-management-tool {
+    width: auto;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.titleadvan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 300px;
+    color: #3586ff;
+    border-radius: 50px;
+
+}
+
+.contadvan {
+    margin-top: 3rem;
+}
+
+.features {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.feature {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    flex-basis: calc(33.333% - 2rem);
+    margin-bottom: 2rem;
+}

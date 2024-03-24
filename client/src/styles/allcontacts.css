@@ -1,0 +1,160 @@
+.custom-card-client {
+    width: 300px;
+    height: fit-content;
+    background: #e0e0e0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    position: relative;
+    border: 1px solid black;
+}
+
+.contcardclients{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between cards as needed */
+}
+
+.custom-card-content {
+    
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.custom-card-heading {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(27, 27, 27);
+}
+
+.custom-card-description-client {
+    font-weight: 100;
+    color: rgb(102, 102, 102);
+}
+
+.custom-card-button-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.custom-card-button {
+    width: 50%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.custom-primary {
+    background-color: rgb(255, 114, 109);
+    color: white;
+}
+
+.custom-primary:hover {
+    background-color: rgb(255, 73, 66);
+}
+
+.custom-secondary {
+    background-color: #12dd2d;
+}
+
+.custom-secondary:hover {
+    background-color: rgb(197, 197, 197);
+}
+
+.custom-exit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.custom-exit-button:hover svg {
+    fill: black;
+}
+
+.custom-exit-button svg {
+    fill: rgb(175, 175, 175);
+}
+.custom-button {
+    --border-radius: 25px;
+    --border-width: 4px;
+    appearance: none;
+    position: relative;
+    padding: 1em 2em;
+    border: 0;
+    background-color:white;
+    font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+    z-index: 2;
+  }
+  
+  .custom-button::after {
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    border-radius: var(--border-radius);
+    background-image: conic-gradient(
+      #488cfb,
+      #29dbbc,
+      #ddf505,
+      #ff9f0e,
+      #e440bb,
+      #655adc,
+      #488cfb
+    );
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    -webkit-mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    filter: hue-rotate(0);
+    animation: rotate-hue linear 500ms infinite;
+    animation-play-state: paused;
+  }
+  
+  .custom-button:hover::after {
+    animation-play-state: running;
+  }
+  
+  @keyframes rotate-hue {
+    to {
+      filter: hue-rotate(1turn);
+    }
+  }
+  
+  .custom-button,
+  .custom-button::after {
+    box-sizing: border-box;
+  }
+  
+  .custom-button:active {
+    --border-width: 5px;
+  }
+  

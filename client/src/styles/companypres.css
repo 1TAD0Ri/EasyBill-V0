@@ -1,0 +1,171 @@
+.company {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    font-family: Georgia, serif;
+    height: 600px;
+    /* animation: fadeIn 2s ease-out; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/* @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+.about {
+    /* width: 400px; */
+    height: 400px;
+}
+
+.photocomp {
+    border-radius: 15px;
+    width: 700px;
+    height: 400px;
+}
+
+.fancyy {
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 1.25em 2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 13px;
+}
+
+.fancyy::before {
+    content: " ";
+    width: 1.5625rem;
+    height: 2px;
+    background: blue;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancyy .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: blue;
+}
+
+.fancyy .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancyy .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancyy .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancyy:hover {
+    color: white;
+    background: blue;
+}
+
+.fancyy:hover::before {
+    width: 0.9375rem;
+    background: white;
+}
+
+.fancyy:hover .text {
+    color: white;
+    padding-left: 1.5em;
+}
+
+.fancyy:hover .top-key {
+    left: -2px;
+    width: 0px;
+}
+
+.fancyy:hover .bottom-key-1,
+.fancyy:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+}
+
+.graph-svg {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding-top: 40px;
+}
+
+polyline {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s ease-in forwards;
+    animation-iteration-count: 10;
+    animation-direction: alternate;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+p {
+    /* font-size: 2rem; */
+    text-align: center;
+    /* color: #efefef; */
+}
+
+.graph-author {
+    font-size: 0.8rem;
+    font-weight: light;
+}

@@ -1,0 +1,26 @@
+.containerproducto{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    font-family: Georgia, serif;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: auto;
+    height: auto;
+    gap: 50px;
+}
+
+.thetalk{
+    margin-bottom: 50px;
+    border: 2px pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.poel{
+    border-radius: 15px;
+    width: 200px;
+}

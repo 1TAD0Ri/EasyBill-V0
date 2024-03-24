@@ -1,0 +1,53 @@
+.container {
+    font-family: Georgia, serif;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+
+}
+
+.containerserv {
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: auto;
+}
+
+.ourserv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerofserv {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.boxofserv {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    width: 300px;
+    border-radius: 15px;
+    padding: 20px;
+    gap: 20px;
+    margin: 10px;
+
+
+}
+
+.headphones {
+    padding: 5px;
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 40%;
+}
